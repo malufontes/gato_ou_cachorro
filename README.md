@@ -8,10 +8,10 @@ Projeto simples de classificação de imagens usando **Ultralytics YOLO** para i
 
 GATO_OU_CACHORRO/
 ├── dataset/
-│   └── classificacao/
-│       ├── train/
-│       ├── val/
-│       └── test/
+│   ├── classificacao/
+│   │   ├── train/
+│   │   └── val/
+│   └── test/
 ├── runs/
 │   └── classify/
 ├── src/
