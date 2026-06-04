@@ -1,8 +1,8 @@
 task: classify
 mode: train
 model: yolo11n-cls.pt
-data: dataset
-epochs: 100
+data: ../dataset/clasificacao
+epochs: 12
 time: null
 patience: 100
 batch: 32
@@ -12,8 +12,8 @@ save_period: -1
 cache: false
 device: cpu
 workers: 8
-project: runs
-name: cat_or_dog
+project: null
+name: cat_or_dog_classificacao_v2-3
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -107,4 +107,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: C:\Users\malu\Documents\bootcamp_ia\classificador_gatos\runs\classify\runs\cat_or_dog
+save_dir: C:\Users\mldantas\Documents\myCodes\gato_ou_cachorro\runs\classify\cat_or_dog_classificacao_v2-3

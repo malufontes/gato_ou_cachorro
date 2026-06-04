@@ -8,14 +8,16 @@ from ultralytics import YOLO
 # - .pt: arquivo com pesos pré-treinados
 model = YOLO("yolo11n-cls.pt")
 
+version = str("1")
+
 # Inicia o treinamento
 model.train(
-    data="dataset",   # pasta contendo train/ e val/
+    data="dataset/clasificacao",   # pasta contendo train/ e val/
     epochs=100,        # número de épocas
     imgsz=128,        # redimensiona todas as imagens para 128x128
     batch=32,         # 32 imagens por lote
-    project="runs",   # pasta base para salvar resultados
-    name="cat_or_dog",  # nome do experimento
+    #project="result_v" + version,   # pasta base para salvar resultados
+    name="cat_or_dog_classificacao_v" + version,  # nome do experimento
 )
 
 # Avalia o modelo no conjunto de validação
