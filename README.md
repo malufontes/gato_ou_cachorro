@@ -45,6 +45,8 @@ O projeto usa o modelo pré-treinado:
 yolo11n-cls.pt
 ```
 
+Foram treinados e testados modelos com diferentes configurações para testar a sua eficácia no jupyter notebook.
+
 ## Funcionalidades
 
 - treinamento do modelo
@@ -85,4 +87,4 @@ cachorro: 18.80%
 gato: 81.20%
 ```
 
-Neste caso, a imagem foi classificada como **gato**.
+Neste caso, a imagem foi classificada como **gato** com uma confiança de 81.20%.
